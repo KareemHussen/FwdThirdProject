@@ -16,27 +16,32 @@ class DetailActivity : AppCompatActivity() {
         setContentView(R.layout.activity_detail)
         setSupportActionBar(toolbar)
 
-        val notificationManager = getSystemService(NotificationManager::class.java)
-        notificationManager.cancelAll()
+
+        button.setOnClickListener {
+            finish()
+        }
 
         val fileName = intent.getStringExtra("filename")
         fileNameValue.text = fileName
 
         val status = intent.getStringExtra("status")
 
+        val notificationManager = getSystemService(NotificationManager::class.java)
+        notificationManager.cancelAll()
+
+
+
 
         if(status== "Success"){
-            statusValue.setTextColor(Color.parseColor("#00FF00"))
+            statueValuee.setTextColor(Color.parseColor("#00FF00"))
         } else {
-            statusValue.setTextColor(Color.parseColor("#FF0000"))
+            statueValuee.setTextColor(Color.parseColor("#FF0000"))
         }
 
-        statusValue.text = status
+        statueValuee.text = status
 
 
-        button.setOnClickListener {
-            finish()
-        }
+
     }
 
 }

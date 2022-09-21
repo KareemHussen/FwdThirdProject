@@ -12,12 +12,12 @@
     app:layoutDescription="@xml/content_detail_scene">
 
     <TextView
-        android:id="@+id/fileName"
+        android:id="@+id/textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:text="File Name:"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:text="File Name: "
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -26,32 +26,32 @@
         android:id="@+id/fileNameValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
         tools:text="Name"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintStart_toEndOf="@+id/fileName"
+        app:layout_constraintStart_toEndOf="@+id/textview"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/status"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
         android:text="Status:"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fileNameValue" />
 
     <TextView
-        android:id="@+id/statusValue"
+        android:id="@+id/statueValuee"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="Success"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintStart_toStartOf="@+id/fileNameValue"
-        app:layout_constraintTop_toTopOf="@+id/status" />
+        app:layout_constraintTop_toTopOf="@+id/status"
+        tools:text="Success" />
 
     <Button
         android:id="@+id/button"

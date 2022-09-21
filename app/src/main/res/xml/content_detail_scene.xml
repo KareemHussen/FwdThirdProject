@@ -11,7 +11,7 @@
         <KeyFrameSet>
             <KeyAttribute
                 app:framePosition="50"
-                app:motionTarget="@id/statusValue"
+                app:motionTarget="@id/statueValuee"
                 android:scaleY="1.5"
                 android:scaleX="1.5" />
         </KeyFrameSet>
@@ -21,18 +21,24 @@
     <!-- Constraints at the start of animation -->
     <ConstraintSet android:id="@+id/start">
         <Constraint
-            android:id="@id/statusValue"
+            android:id="@id/statueValuee"
             android:alpha="0.0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="@+id/fileNameValue"
             app:layout_constraintTop_toTopOf="@+id/status"/>
+        <Constraint
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/fileNameValue"
+            app:layout_constraintTop_toTopOf="@+id/status"
+            android:layout_width="wrap_content"
+            android:id="@+id/statusValue" />
     </ConstraintSet>
 
     <!-- Constraints at the end of animation -->
     <ConstraintSet android:id="@+id/end">
         <Constraint
-            android:id="@id/statusValue"
+            android:id="@id/statueValuee"
             android:alpha="1.0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

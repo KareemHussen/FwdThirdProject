@@ -30,8 +30,7 @@ fun NotificationManager.sendNotification(messageBody: String, applicationContext
     )
 
         .setSmallIcon(R.drawable.ic_assistant_black_24dp)
-        .setContentTitle(applicationContext
-            .getString(R.string.notification_title))
+        .setContentTitle(applicationContext.getString(R.string.notification_title))
         .setContentText(messageBody)
         .setAutoCancel(true)
         .addAction(

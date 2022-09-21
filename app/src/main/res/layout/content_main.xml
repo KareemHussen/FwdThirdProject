@@ -45,7 +45,7 @@
     </RadioGroup>
 
     <com.example.fwdthirdproject.LoadingButton
-        android:id="@+id/custom_button"
+        android:id="@+id/loadting_button"
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:layout_margin="20dp"
